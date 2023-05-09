@@ -4,7 +4,7 @@ from django.test import SimpleTestCase  # herer we use SimpleTestCase because th
 # Create your tests here.
 from django.urls import reverse, resolve
 
-from pages.views import HomePageView
+from pages.views import *
 
 
 class HomePageTest(SimpleTestCase):
@@ -23,7 +23,7 @@ class HomePageTest(SimpleTestCase):
 
     def test_homepage_contains_correct_html(self):  # test if the rendered template contains the correct html content
         response = self.client.get("/")
-        self.assertContains(response, "home page")
+        self.assertContains(response, "Welcome")
 
     def test_homepage_does_not_contain_incorrect_html(
             self):  # test if the rendered template does not contains a wrong content
@@ -37,3 +37,16 @@ class HomePageTest(SimpleTestCase):
 # diff between reverse & resolve :
 # reverse takes pattern name to access the url
 # resolve takes path to access the url
+
+    class AboutPageTests(SimpleTestCase):
+        def setup(self):
+            self.response = self.client.get(reverse("about"))
+
+        def test_about_template(self):
+            self.assertEqual(self.response.status_code, 200)
+            self.assertTemplateUsed(self.response, "about.html")
+            self.assertContains(self.response, "about page")
+
+        def test_about_view(self):
+            view = reverse("about")
+            self.assertEqual(view.func.__name__, AboutPageView.as_view().__name__)
