@@ -12,12 +12,12 @@ services:
   db:
     image: postgres:13
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres_db:/var/lib/postgresql/data
     ports:
       - 5432:5432
     environment:
       - POSTGRES_PASSWORD=nasr
 
 volumes:
-     postgres_data:
+     postgres_db:
 

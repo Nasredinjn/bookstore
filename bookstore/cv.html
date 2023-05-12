@@ -1,0 +1,352 @@
+<div class="document-wrapper"><div class="" tabindex=""><div><style type="text/css" id="static">
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+    body{text-align:left;font-feature-settings:"liga" 0;-moz-font-feature-settings:"liga" off}
+    .skn-cbg2 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%;table-layout:fixed}
+
+    .skn-cbg2 ul,.skn-cbg2 li{list-style-type:disc;margin:0 0 0 10px;padding:0}
+    .skn-cbg2 ul li{margin:0 0 0 13px}
+    .skn-cbg2 .address li{display:inline;margin:0;padding:0;list-style:none}
+    .skn-cbg2 .address ul{margin:0}
+    .skn-cbg2 .address li:before{content:"\25C6\0020";vertical-align:bottom}
+    .skn-cbg2 .address li:first-child:before{content:""}
+    .skn-cbg2 .dispInBlk{display:inline-block}
+    .skn-cbg2 .brk-all{word-break:break-all}
+
+    /*Added by Amit for LCMAIN-955*/
+   
+    .skn-cbg2 .jobtitle,.skn-cbg2 .companyname,.skn-cbg2 .degree,.skn-cbg2 .txt-bold{font-weight:bold}
+    .skn-cbg2 .paddedline{display:block}
+    .skn-cbg2 .flt-right{float:right}
+    .skn-cbg2 .logo,.skn-cbg2 .nodisplay,.skn-cbg2 .displayNoneThisField{display:none}
+
+    .skn-cbg2{word-wrap:break-word;color:#000}
+    .skn-cbg2 .lowerborder{border-bottom:3px solid;margin-top:2px;display:block}
+    .skn-cbg2 .SECTION_CNTC{padding-bottom:7px}
+    .skn-cbg2 .name{font-size:15px;line-height:17px;font-weight:bold;padding:0 0 1px 0;border-top:1px solid;border-bottom:1px solid;text-align:center;font-variant:small-caps}
+    .skn-cbg2 .paragraph{position:relative}
+    .skn-cbg2 .heading{clear:both;text-align:center;font-weight:normal;font-variant:small-caps;position:relative}
+    .skn-cbg2 .heading:before{border-top:1px solid black;content:"";display:block;height:1px;position:absolute;top:50%;width:100%;z-index:1}
+    .skn-cbg2 .section{position:relative}
+    .skn-cbg2 .sectiontitle{display:inline-block;position:relative;z-index:5;background:#FFF !important;padding:0 10px}
+    .skn-cbg2 .address,.skn-cbg2 .address2{position:relative;text-align:center;font-size:0.917em;line-height:1.25em}
+    .skn-cbg2 .address{margin-top:11px}
+    .skn-cbg2 .address2{text-align:left}
+    .skn-cbg2 .table_wrapper{width:100%;margin-top:0}
+    .skn-cbg2 table.twocol td{width:50%}
+    .skn-cbg2 table.skills th,.skn-cbg2 table.skills td{width:20%;text-align:center}
+    .skn-cbg2 table.skills th{text-decoration:underline}
+    .skn-cbg2 table.skills .skillname,.skn-cbg2 table.skills .skillrating{text-align:left;width:35%}
+    .skn-cbg2 table.skills .skillrating{width:20%}
+    .skn-cbg2 table.skills .skillyears,.skn-cbg2 table.skills .skilllast{width:19%}
+    .skn-cbg2 table.skills .pad1{width:5%}
+    .skn-cbg2 table.skills .pad2,.skn-cbg2 table.skills .pad3{width:1%}
+    .skn-cbg2 .address li.social .social-text{display:inline-block}
+    .skn-cbg2 .social .field a{color:#0000EE;text-decoration:underline}
+    .skn-cbg2 .social .field a:hover{text-decoration:underline}
+
+
+    /*FIX for FORCEFULLY making left margin ZERO for CL*/
+    .skn-cbg2 .sectionCL .paragraph{margin-top:0!important}
+
+    /* Style for Signature */
+    .skn-cbg2 .signPic{font-size:7px!important;color:#8a8a8a!important}
+    .skn-cbg2 .txtleft + .field_sign{text-align:left}
+    .skn-cbg2 .txtcenter + .field_sign{text-align:center}
+    .skn-cbg2 .txtright + .field_sign{text-align:right}
+    .skn-cbg2 .signPic img{padding-top:5px;max-width:100%}
+    
+    /*New logic for infographic*/
+    .skn-cbg2 .lang-sec .singlecolumn,.skn-cbg2 .fielditem-olsh{display:none}
+    .skn-cbg2 .lang-sec.infobarsec .infobarpara,.skn-cbg2 .lang-sec.infotilesec .infotilepara,.skn-cbg2 .nativeLangPara .fielditem-olsh{display:block}
+
+    /*Infographic*/
+    .skn-cbg2 .lang-sec.infobarsec{font-size:0}
+    .skn-cbg2 .lang-sec.infobarsec .field *,.skn-cbg2 .lang-sec.infobarsec .nativeLangPara .field{display:inline}
+    .skn-cbg2 .lang-sec.infobarsec .paragraph{display:inline-block;vertical-align:top;padding-bottom:5px;margin-top:0}
+    .skn-cbg2 .lang-sec.infobarsec .singlecolumn{margin-left:0!important;padding-left:0;position:relative}
+    .skn-cbg2 .lang-sec.infobarsec .para_odd{margin-right:15px}
+    .skn-cbg2 .lang-sec.infobarsec .nativeLangPara{width:100%!important}
+    .skn-cbg2 .lang-sec.infobarsec .inner-rating{position:relative}
+    .skn-cbg2 .lang-sec.infobarsec .rating-bar{background:#d5d6d6;width:100%;clear:both;margin-top:3px;overflow:hidden}
+    .skn-cbg2 .lang-sec.infobarsec .inner-rating{background-color:#000;height:4px;width:60%}
+    .skn-cbg2 .lang-sec.infobarsec > .paragraph:nth-last-child(1),.skn-cbg2 .lang-sec.infobarsec > .paragraph:nth-last-child(2){padding-bottom:0!important}
+
+    /* MFR portal specific changes */
+    .skn-cbg2 .zipprefix,.skn-cbg2 .zipprefixRcnt,.skn-cbg2.MFR .zipsuffix,.skn-cbg2.MFR .zipsuffixRcnt{display:none}
+    .skn-cbg2 .zipsuffix,.skn-cbg2.MFR .zipprefix{display:inline}
+    .skn-cbg2 .zipsuffixRcnt,.skn-cbg2.MFR .zipprefixRcnt{display:inline}
+
+    /*Dyanmic BG*/
+    .skn-cbg2.dynamicbg{position:relative}
+    .skn-cbg2.dynamicbg:before{background-image:url("");background-repeat:no-repeat;background-position: 0 top;background-size:contain;content:'';position:absolute;left:0;top:0;height:100%}
+
+    /*textAlign changes*/
+    .skn-cbg2 .sectionTextAlignLeft *{text-align:left!important}
+    .skn-cbg2 .sectionTextAlignRight *{text-align:right!important;list-style-position:inside}
+    .skn-cbg2 .sectionTextAlignCenter *{text-align:center!important;list-style-position:inside}
+    .skn-cbg2 .sectionTextAlignJustify *{text-align:justify!important}
+
+    /*Infographic Tiles*/
+    .skn-cbg2 .lang-sec.infotilesec,.skn-cbg2 .skli-sec{font-size:0}
+    .skn-cbg2 .lang-sec.infotilesec .paragraph,.skn-cbg2 .skli-sec .paragraph{display:inline-block;vertical-align:top;padding-bottom:5px!important;margin-top:0}
+    .skn-cbg2 .lang-sec.infotilesec > .paragraph:nth-last-child(1),.skn-cbg2 .lang-sec.infotilesec > .paragraph:nth-last-child(2),.skn-cbg2 .skli-sec > .paragraph:nth-last-child(1),.skn-cbg2 .skli-sec > .paragraph:nth-last-child(2){padding-bottom:0!important}
+    .skn-cbg2 .lang-sec.infotilesec .field *,.skn-cbg2 .skli-sec .field *,.skn-cbg2 .lang-sec.infotilesec .nativeLangPara .field{display:inline}
+    .skn-cbg2 .lang-sec.infotilesec .singlecolumn,.skn-cbg2 .skli-sec .singlecolumn{margin-left:0!important}
+    .skn-cbg2 .lang-sec.infotilesec .sliced-rect,.skn-cbg2 .skli-sec .sliced-rect{height:6px;width:100%;line-height:0px;margin-top:3px;clear:both}
+    .skn-cbg2 .lang-sec.infotilesec .paragraph.para_odd,.skn-cbg2 .skli-sec .paragraph.para_odd{margin-right:15px}
+    .skn-cbg2 .lang-sec.infotilesec .sliced-rect .sliced-rect-tile,.skn-cbg2 .skli-sec .sliced-rect .sliced-rect-tile{height:100%;background-color:#d5d6d6;float:left;margin-right:3px}
+    .skn-cbg2 .lang-sec.infotilesec .sliced-rect .sliced-rect-tile:last-child,.skn-cbg2 .skli-sec .sliced-rect .sliced-rect-tile:last-child{margin-right:0}
+
+    /*Rectangular Rating Blocks*/
+    .skn-cbg2 .sliced-rect .sliced-rect-tile.ratvfill{background-color:#000000}
+    .skn-cbg2 .hide-bar .rating-bar,.skn-cbg2 .hide-bar .sliced-rect,.skn-cbg2 .hide-colon .colon{display:none!important}
+
+    /*Infographic Languages Ordering Support*/
+    .skn-cbg2 .lang-sec.infobarsec .colon,.skn-cbg2 .lang-sec.infotilesec .colon{display:none}
+    .skn-cbg2 .lang-sec.infobarsec .field:first-child .colon,.skn-cbg2 .lang-sec.infotilesec .field:first-child .colon{display:inline;font-weight:bold}
+    .skn-cbg2 .lang-sec.infobarsec .field:first-child > span:first-child,  .skn-cbg2 .lang-sec.infotilesec .field:first-child > span:first-child{font-weight:bold}
+ 
+    /*For Extra Space Before Colon*/
+    .skn-cbg2 .beforecolonspace{display:none!important}
+    .skn-cbg2.MFR .beforecolonspace{display:inline!important}
+
+    /*MPR*/
+    .skn-cbg2 .hide-bar .field-ratt{display:none}
+
+    /* Builder css for mobile device */
+    .android .skn-cbg2, .ios .skn-cbg2{box-sizing:content-box}
+    /*HILT multi para*/   
+    .skn-cbg2 .multi-para-hilt{display:flex;flex-wrap:wrap}
+    .skn-cbg2 .multi-para-hilt .heading{width:100%}
+    .skn-cbg2 .multi-para-hilt .paragraph{width:49%;margin-bottom:20px;margin-top:0}
+    .skn-cbg2 .multi-para-hilt .paragraph:last-child,.skn-cbg2 .multi-para-hilt .paragraph:nth-last-child(2):nth-child(2n){margin-bottom:0}
+    .skn-cbg2 .multi-para-hilt .paragraph:nth-child(2n+1){margin-left:2%}
+    .skn-cbg2 .multi-para-hilt .paragraph:nth-child(2n){margin-left:0}
+    .skn-cbg2 .multi-para-hilt .singlecolumn{margin:0}
+    .skn-cbg2 .multi-section-hilt .multi-para-opt,.skn-cbg2 .section:not(.multi-para-hilt):not(.multi-section-hilt) .multi-para-opt,.skn-cbg2 .multi-para-hilt .twocol{display:none}
+    
+    /*builder fixes*/ 
+    .skn-cbg2 .sortable-item .multi-para-hilt{display:block}
+
+    /*HILT multi para - For PDF*/
+    .skn-cbg2.for-pdf .multi-para-hilt{display:block}
+    .skn-cbg2.for-pdf .multi-para-hilt .pdfparawrapper:after{content:'';clear:both;display:table}
+    .skn-cbg2.for-pdf .multi-para-hilt .pdfparawrapper .paragraph:first-child{float:left;margin-left:0}
+    .skn-cbg2.for-pdf .multi-para-hilt .pdfparawrapper .paragraph:nth-child(2){float:right;margin-left:2%}
+    .skn-cbg2.for-pdf .multi-para-hilt .pdfparawrapper .paragraph{margin-bottom:10px}
+    .skn-cbg2.for-pdf .multi-para-hilt .pdfparawrapper:last-child .paragraph{margin-bottom:0}
+</style><style type="text/css" id="dynamic" data-time="Thu May 11 2023 01:15:43 GMT+0200 (heure d’été d’Europe centrale)">
+    .skn-cbg2,.skn-cbg2 table{line-height:22px}
+    .skn-cbg2.pagesize{width:643px}
+    .skn-cbg2.fontsize,.skn-cbg2 .lang-sec.infobarsec .paragraph *,.skn-cbg2 .lang-sec.infotilesec .paragraph *,.skn-cbg2 .skli-sec .paragraph *{font-size:16px}
+    .skn-cbg2.fontface{font-family:Times New Roman}
+    .skn-cbg2.vmargins{padding-top:40px;padding-bottom:40px}
+    .skn-cbg2.hmargins{padding-left:52px;padding-right:52px}
+    .skn-cbg2 .section{margin-top:18px}
+    .skn-cbg2 .sectiontitle{font-size:21px;line-height:27px;max-width:643px}
+    .skn-cbg2 .heading{margin-bottom:7px}
+    .skn-cbg2 .paragraph{margin-top:16px}
+    .skn-cbg2 .firstsection,.skn-cbg2 .firstparagraph,.skn-cbg2 .SECTION_CNTC{margin-top:0!important}
+    .skn-cbg2 .singlecolumn,.skn-cbg2 .maincolumn{margin-left:0px}
+    .skn-cbg2 .lang-sec .heading{margin-left:-0px}
+    .skn-cbg2 table.skills td{padding-top:7px}
+    .skn-cbg2 .name{font-size:30px;line-height:60px}
+    .skn-cbg2 .address{font-size:13px;line-height:21px;margin-top:10px}
+    .skn-cbg2 .address li:before{font-size:12px}
+    .skn-cbg2 .name,.skn-cbg2 .lowerborder,.skn-cbg2 .sectiontitle{color:#000000}
+    .skn-cbg2 .heading:before{border-top-color:#000000}
+    .skn-cbg2 .profTitle{font-size:20px;line-height:20px;margin-bottom:10px}
+    .skn-cbg2.dynamicbg:before{background-image:url({$DYBG});width:749px}
+    .skn-cbg2 .subj-sec{margin-top:40px}
+
+    /* Style for Signature */
+    .skn-cbg2 .sign{margin-top:94px!important}
+    .skn-cbg2.documentCL .sign{margin-top:28px!important}  /*documentCL class is coming from backend for cover letter only*/
+
+    /*FIX for Re-calculating width of singlecolumn for CL*/
+    .skn-cbg2 .sectionCL .singlecolumn{margin-left:0!important;width:100%}
+    .skn-cbg2 .address2{font-size:16px;line-height:22px}
+
+    /*Infographic*/
+    .skn-cbg2 .lang-sec.infobarsec{margin-left:0px}
+    .skn-cbg2 .lang-sec.infobarsec .paragraph{width:309px}
+    .skn-cbg2 .lang-sec.infobarsec .inner-rating{background-color:#000000}
+    .skn-cbg2 .lang-sec.infobarsec .sortable-item .para_odd{max-width:309px}
+
+    /*Infographic Skills*/
+    .skn-cbg2 .lang-sec.infotilesec,.skn-cbg2 .skli-sec{margin-left:0px}
+    .skn-cbg2 .lang-sec.infotilesec .heading,.skn-cbg2 .skli-sec .heading{margin-left:-0px}
+    .skn-cbg2 .lang-sec.infotilesec .paragraph,.skn-cbg2 .skli-sec .paragraph{width:309px}
+    .skn-cbg2 .lang-sec.infotilesec .nativeLangPara{width:643px;max-width:643px}
+
+    .skn-cbg2 .fielditem-olsh{padding-top:6px;margin-bottom:-3px}
+
+    /*Finalize Fixes*/
+    .skn-cbg2 .lang-sec.infobarsec .sortableInner .sortable-item:not(:first-child) .paragraph,.skn-cbg2 .skli-sec .sortableInner .sortable-item:not(:first-child) .paragraph{width:309px;vertical-align:top}
+    .skn-cbg2 .data-LNGG .sortable-item{display:inline-block}
+
+    /*Rectangular Rating Blocks*/
+    .skn-cbg2 .paragraph .sliced-rect .sliced-rect-tile.ratvfill{background-color:#000000}
+
+    /*HILT multi para*/   
+    .skn-cbg2 .multi-para-hilt .heading{width:calc(100% + 0px);margin-left:-0px}
+    .skn-cbg2 .multi-para-hilt{margin-left:0px}
+</style></div><div class="document doc-root fontsize fontface vmargins hmargins   pagesize skn-cbg2 CBG2  MPR " docskinwidth="643" data-color=""><div class="sortable-item section-container name-contact"><div class="document-tool sec-tool" style="right: -54px;">< class="btn btn-icon-tertiary btn-icon-edit" type="" title="View / Edit"><i class="icon-edit"></i></></div><div id="SECTION_NAMEa38de8ca-828a-427b-92bf-021c90642ee4" class="section SECTION_NAME firstsection   " data-section-cd="NAME"><div class=" doc-item"><div class=""><div class=""><div id="PARAGRAPH_NAME_41c4d34d-9c2b-6c44-64b0-99bec1b154f5" class="paragraph PARAGRAPH_NAME firstparagraph  "><div>
+      <div class="name">
+        <span id="FIELD_FNAM">NASR-EDDINE</span><span dependency="FNAM+LNAM"></span> <span id="FIELD_LNAM">EL JANTAFI</span>
+        
+      </div>
+      <div class="lowerborder"></div>
+    </div><div class="doc-overlay para-overlay" style="left:-54px; right: -54px;"><span class="badge badge-primary badge-edit"></span><span>&nbsp;</span></div></div></div></div></div></div><div id="SECTION_CNTC45095875-1a43-4ee7-9364-0c793da33620" class="section SECTION_CNTC    " data-section-cd="CNTC"><div class=" doc-item"><div class=""><div class=""><div id="PARAGRAPH_CNTC_91538bca-d69d-95a4-d6b2-a237c55503c5" class="paragraph PARAGRAPH_CNTC firstparagraph  "><div class="clearfix doc-item">
+      <div class="address">
+        <ul>
+          <li class="first" dependency="ADDR|STRT|CITY|STAT|ZIPC">
+            <span class="zipsuffix">
+              <span id="FIELD_STRT"></span><span class="spaced" id="FIELD_CITY"></span><span class="spaced" id="FIELD_STAT"></span>
+              <span class="spaced" id="FIELD_ZIPC"></span>
+            </span>
+            
+            <span id="FIELD_ADDR">NADOR MOROCCO</span>
+          </li>
+          <li dependency="HPHN"><span id="FIELD_HPHN">+212 687862572</span></li>
+          
+          <li dependency="EMAI"><span id="FIELD_EMAI">nasredinaljantafi@gmail.com</span></li>
+                
+          
+          
+          
+                
+          
+        </ul>
+      </div>
+    </div><div class="doc-overlay para-overlay" style="left:-54px; right: -54px;"><span class="badge badge-primary badge-edit"></span><span>&nbsp;</span></div></div></div></div></div></div><div class="doc-overlay section-overlay" style="left:-54px; right: -54px;"><span>&nbsp;</span></div></div><div class="parent-wrapper"><div class="sortable-item section-container data-ALNK"><div class="document-tool sec-tool" style="right: -54px;">< class="btn btn-icon-tertiary btn-icon-edit" type="" title="View / Edit"><i class="icon-edit"></i></>< class="btn  btn-icon-tertiary btn-icon-delete" type="" title="Delete"><i class="icon-delete" title="Delete"></i></><i class="icon-move"></i></></div><div><div id="SECTION_ALNK3a488131-3152-2004-fc46-74d60ae63269" class="section SECTION_ALNK    has-title " data-section-cd="ALNK"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_ALNK">Website, Portfolio, Profiles<span title=" Website, Portfolio, Profiles " class="rename-section text-rename">Rename</span></div></div><div class=""><div class=""><div id="PARAGRAPH_ALNK_b0d8d601-c774-8fc8-d0a9-ab75f796f478" class="paragraph PARAGRAPH_ALNK firstparagraph  "><div class="clearfix doc-item">
+          <div class="singlecolumn">
+                  <ul>
+                    <li dependency="LNK1"><span id="FIELD_LNK1">https://github.com/Nasredinjn</span></li>
+                    
+                    
+                    
+                  </ul>
+          </div>
+      </div><div class="doc-overlay para-overlay" style="left:-54px; right: -54px;"><span class="badge badge-primary badge-edit"></span><span>&nbsp;</span></div></div></div></div></div><div class="doc-overlay section-overlay" style="left:-54px; right: -54px;"><span>&nbsp;</span></div></div></div></div><div class="sortable-item section-container data-EDUC"><div class="document-tool sec-tool" style="right: -54px;">< class="btn btn-icon-tertiary btn-icon-edit" type="" title="View / Edit"><i class="icon-edit"></i></>< class="btn  btn-icon-tertiary btn-icon-delete" type="" title="Delete"><i class="icon-delete" title="Delete"></i></>""<i class="icon-move"></i></></div><div><div id="SECTION_EDUCa69fce57-d9e2-4dd2-a420-84b087144e39" class="section SECTION_EDUC   multi-para has-title " data-section-cd="EDUC"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_EDUC">Education<span title=" Education " class="rename-section text-rename">Rename</span></div></div><div class=""><div class=""><div id="PARAGRAPH_EDUC_bd4c08ef-5186-3692-2173-d3536845fcd4" class="paragraph PARAGRAPH_EDUC firstparagraph  "><div class="clearfix doc-item">
+          <div class="singlecolumn">
+              <span class="paddedline" dependency="SCGI|GRYR|STUY|DGRE|GRST|GRED">
+                  <span class="degree" id="FIELD_DGRE">Bachelor of Science</span><span dependency="DGRE"><span dependency="STUY|GRYR|GRST|GRED">: </span></span>
+                  <span class="programline" id="FIELD_STUY">Mathematics And Computer Science</span><span dependency="STUY"><span dependency="GRYR|GRST|GRED">, </span></span>
+                  <span class="xslt_static_change displayNoneThisField">Expected in </span><span id="FIELD_GRYR" format="%m/%Y">12/2022</span><br dependency="GRYR">
+                  
+                </span>
+              <span class="paddedline" dependency="SCIT|SCHO|SSTA">
+                  <span class="companyname companyname_educ" id="FIELD_SCHO">UNIVERSITY MOHAMED I</span><span dependency="SCHO+SCIT|SSTA"> - </span>
+                  <span class="joblocation jobcity" id="FIELD_SCIT">MOROCCO</span>
+                  <span class="joblocation jobstate" id="FIELD_SSTA"></span><br dependency="SCHO|SCIT|SSTA|SCNT">
+              </span>
+              
+              <span id="FIELD_FRFM"></span>
+          </div>
+      </div><div class="doc-overlay para-overlay" style="left:-54px; right: -54px;"><span class="badge badge-primary badge-edit"></span><span>&nbsp;</span></div></div></div></div></div><div class="doc-overlay section-overlay" style="left:-54px; right: -54px;"><span>&nbsp;</span></div></div></div></div><div class="sortable-item section-container data-SUMM"><div class="document-tool sec-tool" style="right: -54px;">< class="btn btn-icon-tertiary btn-icon-edit" type="" title="View / Edit"><i class="icon-edit"></i></>< class="btn  btn-icon-tertiary btn-icon-delete" type="" title="Delete"><i class="icon-delete" title="Delete"></i></><i class="icon-move"></i></></div><div><div id="SECTION_SUMM86caecae-64d2-4cb3-8307-ab8d4778c436" class="section SECTION_SUMM    has-title " data-section-cd="SUMM"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_SUMM">Professional Summary<span title=" Professional Summary " class="rename-section text-rename">Rename</span></div></div><div class=""><div class=""><div id="PARAGRAPH_SUMM_a7400d7c-adb0-3e91-f823-28746632ef5e" class="paragraph PARAGRAPH_SUMM firstparagraph  "><div class="clearfix doc-item">
+      <div class="singlecolumn" id="FIELD_FRFM"><p>With 2+ years' experience in Python backend development, I have built and integrated secure, reliable web applications using the Django web framework and REST API structures. I am seeking to utilize my technical knowledge and problem-solving skills to contribute my initiative and dedication to achieving organizational objectives and making a positive impact.</p></div>
+    </div><div class="doc-overlay para-overlay" style="left:-54px; right: -54px;"><span class="badge badge-primary badge-edit"></span><span>&nbsp;</span></div></div></div></div></div><div class="doc-overlay section-overlay" style="left:-54px; right: -54px;"><span>&nbsp;</span></div></div></div></div><div class="sortable-item section-container data-HILT"><div class="document-tool sec-tool" style="right: -54px;">< class="btn btn-icon-tertiary btn-icon-edit" type="" title="View / Edit"><i class="icon-edit"></i></>< class="btn  btn-icon-tertiary btn-icon-delete" type="" title="Delete"><i class="icon-delete" title="Delete"></i></><i class="icon-move"></i></></div><div><div id="SECTION_HILTa56c8124-d545-4cc1-9c8a-fc1dad15a0ba" class="section SECTION_HILT    has-title " data-section-cd="HILT"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_HILT">Skills<span title=" Skills " class="rename-section text-rename">Rename</span></div></div><div class=""><div class=""><div id="PARAGRAPH_HILT_1d06377e-73a5-14d4-e05d-256445f4e412" class="paragraph PARAGRAPH_HILT firstparagraph  "><div class="clearfix doc-item">
+      <div class="singlecolumn maincolumn">
+        <table class="twocol">
+          <tbody><tr>
+            <td class="twocol_1" id="FIELD_SKC1"><ul>
+<li>Database schema design and implementation</li>
+<li>Database optimization and administration</li>
+<li>Automated testing and unit tests</li>
+<li>Django web framework</li>
+<li>Python Programming Language</li>
+<li>RESTful API development and maintenance</li>
+</ul></td>
+            <td class="twocol_2" id="FIELD_SKC2"><ul>
+<li>Experience with different database management systems (MySQL,Postgresql,Oracle)</li>
+<li>Docker containerization</li>
+<li>Git version control</li>
+<li>Strong debugging and troubleshooting skills</li>
+<li>Problem-solving</li>
+<li>Object-oriented programming</li>
+</ul></td>
+          </tr>
+        </tbody></table>
+        <div class="multi-para-opt">
+          <div id="FIELD_PTTL" class="txt-bold"></div>
+          <div class="multi-para-content">
+              <div id="FIELD_SKC1"><ul>
+<li>Database schema design and implementation</li>
+<li>Database optimization and administration</li>
+<li>Automated testing and unit tests</li>
+<li>Django web framework</li>
+<li>Python Programming Language</li>
+<li>RESTful API development and maintenance</li>
+</ul></div>
+              <div id="FIELD_SKC2"><ul>
+<li>Experience with different database management systems (MySQL,Postgresql,Oracle)</li>
+<li>Docker containerization</li>
+<li>Git version control</li>
+<li>Strong debugging and troubleshooting skills</li>
+<li>Problem-solving</li>
+<li>Object-oriented programming</li>
+</ul></div>
+          </div>
+      </div>
+      </div>
+    </div><div class="doc-overlay para-overlay" style="left:-54px; right: -54px;"><span class="badge badge-primary badge-edit"></span><span>&nbsp;</span></div></div></div></div></div><div class="doc-overlay section-overlay" style="left:-54px; right: -54px;"><span>&nbsp;</span></div></div></div></div><div class="sortable-item section-container data-EXPR"><div class="document-tool sec-tool" style="right: -54px;">< class="btn btn-icon-tertiary btn-icon-edit" type="" title="View / Edit"><i class="icon-edit"></i></>< class="btn  btn-icon-tertiary btn-icon-delete" type="" title="Delete"><i class="icon-delete" title="Delete"></i></><i class="icon-move"></i></></div><div><div id="SECTION_EXPRdc221ef8-67e7-4f13-8134-6d2b84f35282" class="section SECTION_EXPR   multi-para has-title " data-section-cd="EXPR"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_EXPR">Professional Experience<span title=" Professional Experience " class="rename-section text-rename">Rename</span></div></div><div class=""><div class=""><div id="PARAGRAPH_EXPR_7c64194a-743b-a74d-0eb9-83951498e849" class="paragraph PARAGRAPH_EXPR firstparagraph  "><div class="clearfix doc-item">
+      <div class="singlecolumn">
+        <span class="paddedline" dependency="JTIT" style="display: inline;">
+          <span class="jobtitle" id="FIELD_JTIT">Web Developer</span><span dependency="JTIT+JSTD|EDDT">, </span>
+        </span>
+        <span class="paddedline" dependency="JSTD|EDDT" style="display: inline;">
+          <span class="jobdates" id="FIELD_JSTD" format="%m/%Y">08/2021</span><span class="xslt_static_change" dependency="JSTD+EDDT"> - </span>
+          <span class="jobdates" id="FIELD_EDDT" format="%m/%Y">Current</span><br dependency="JSTD|EDDT">
+        </span>
+        <span class="paddedline" dependency="COMP|JSTA|JCIT|JCNT|JLOC">
+          <span class="companyname" id="FIELD_COMP">Freelancer</span><span dependency="COMP"></span>
+          <span class="joblocation jobcity" id="FIELD_JCIT"></span>
+          <span class="joblocation jobstate" id="FIELD_JSTA"></span>
+          <span class="joblocation jobcountry" id="FIELD_JCNT"></span>
+          <span class="joblocation" id="FIELD_JLOC"></span>
+        </span>
+        <span class="jobline" id="FIELD_JDES"><ul>
+<li>Coded websites using HTML, CSS, JavaScript and jQuery languages.</li>
+<li>Planned website development, converting mockups into usable web presence with HTML, JavaScript, AJAX and JSON coding.</li>
+<li>Oversaw back-end development using Python and Django Framework to maintain website integrity, security and efficiency.</li>
+<li>Designed and developed efficient and maintainable software according to business objectives and needs of various clients.</li>
+</ul></span>
+      </div>
+    </div><div class="doc-overlay para-overlay" style="left:-54px; right: -54px;"><span class="badge badge-primary badge-edit"></span><span>&nbsp;</span></div></div></div></div></div><div class="doc-overlay section-overlay" style="left:-54px; right: -54px;"><span>&nbsp;</span></div></div></div></div><div class="sortable-item section-container data-LNGG"><div class="document-tool sec-tool" style="right: -54px;">< class="btn btn-icon-tertiary btn-icon-edit" type="" title="View / Edit"><i class="icon-edit"></i></>< class="btn  btn-icon-tertiary btn-icon-delete" type="" title="Delete"><i class="icon-delete" title="Delete"></i></><i class="icon-move"></i></></div><div><div id="SECTION_LNGG0574b2df-ec6d-bb5a-43cb-f21b2e6b6ec5" class="section lang-sec infotilesec SECTION_LNGG    has-title " data-section-cd="LNGG"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_LNGG">Languages<span title=" Languages " class="rename-section text-rename">Rename</span></div></div><div class=""><div class="sortableInner"><div id="PARAGRAPH_LNGG_358e44b0-23c0-e6c6-e1a7-af9fe87473f0" class="paragraph paragraph-fieldgroup PARAGRAPH_LNGG firstparagraph  nativeLangPara"><div class="clearfix doc-item">
+          
+          <div class="singlecolumn infotilepara">
+              <div class="fieldgroup-0">
+                  <div class="field fielditem-frfm">
+                      <span id="FIELD_FRFM">Arabic</span><span class="colon" dependency="FRFM"><span class="beforecolonspace"> </span>:</span>
+                      <span class="flt-right" id="FIELD_RATG"></span>
+                  </div>
+                  
+                  <div class="field field-ratt fielditem-ratt">
+                      <span id="FIELD_RATT">Native language</span><span class="colon" dependency="RATT">: </span>
+                  </div>
+                  
+                  <div class="field fielditem-adif">
+                      <span id="FIELD_ADIF"></span>
+                  </div>
+              </div>
+          </div>
+      </div><div class="doc-overlay para-overlay" style="left:-54px; right: -54px;"><span class="badge badge-primary badge-edit"></span><span>&nbsp;</span></div></div><div id="PARAGRAPH_LNGG_38a74c17-7813-ab53-623b-4a04bac45aa0" class="paragraph paragraph-fieldgroup PARAGRAPH_LNGG  para_odd"><div class="clearfix doc-item">
+          
+          <div class="singlecolumn infotilepara">
+              <div class="fieldgroup-0">
+                  <div class="field fielditem-frfm">
+                      <span id="FIELD_FRFM">English</span><span class="colon" dependency="FRFM"><span class="beforecolonspace"> </span>:</span>
+                      <span class="flt-right" id="FIELD_RATG">C1</span>
+                  </div>
+                  <div class="sliced-rect fielditem-ratv" dependency="RATV"><div class="sliced-rect-tile ratvfill" id="FIELD_RATV" type="slicedrect" style="width: calc(16.6667% - 2.5px);"></div><div class="sliced-rect-tile ratvfill" id="FIELD_RATV" type="slicedrect" style="width: calc(16.6667% - 2.5px);"></div><div class="sliced-rect-tile ratvfill" id="FIELD_RATV" type="slicedrect" style="width: calc(16.6667% - 2.5px);"></div><div class="sliced-rect-tile ratvfill" id="FIELD_RATV" type="slicedrect" style="width: calc(16.6667% - 2.5px);"></div><div class="sliced-rect-tile ratvfill" id="FIELD_RATV" type="slicedrect" style="width: calc(16.6667% - 2.5px);"></div><div class="sliced-rect-tile" id="FIELD_RATV" type="slicedrect" style="width: calc(16.6667% - 2.5px);"></div></div>
+                  <div class="field field-ratt fielditem-ratt">
+                      <span id="FIELD_RATT">Advanced</span><span class="colon" dependency="RATT">: </span>
+                  </div>
+                  
+                  <div class="field fielditem-adif">
+                      <span id="FIELD_ADIF"></span>
+                  </div>
+              </div>
+          </div>
+      </div><div class="doc-overlay para-overlay" style="left:-54px; right: -54px;"><span class="badge badge-primary badge-edit"></span><span>&nbsp;</span></div></div></div></div></div><div class="doc-overlay section-overlay" style="left:-54px; right: -54px;"><span>&nbsp;</span></div></div></div></div></div></div><div></div></div></div>

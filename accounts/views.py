@@ -8,8 +8,4 @@ from .forms import *
 
 # Create your views here.
 
-class SignUpView(CreateView):
-    model = get_user_model()
-    template_name = "registration/signup.html"
-    form_class = CustomUserCreationForm
-    success_url = reverse_lazy('login')
+
