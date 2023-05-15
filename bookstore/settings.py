@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "allauth.socialaccount.providers.google",
-    "django.contrib.sites"
+    "django.contrib.sites",
+    "books",
 ]
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
