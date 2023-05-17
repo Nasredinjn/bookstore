@@ -16,12 +16,18 @@ class Book(models.Model):
     title = models.CharField(max_length=30)
     author = models.CharField(max_length=30)
     price = models.DecimalField(max_digits=6, decimal_places=2)
+    cover = models.ImageField(upload_to='covers/', blank=True)
 
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
         return reverse("book_details", args=[str(self.id)])
+
+    def book_cover(self):
+        if self.cover:
+            return getattr(self.cover, "url", None)
+        return None
 
 
 class Review(models.Model):
@@ -39,4 +45,3 @@ class Review(models.Model):
 
     def __str__(self):
         return self.review
-
