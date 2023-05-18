@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 from .models import *
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
-
+from django.db.models import Q
 
 class BookListView(LoginRequiredMixin, ListView):
     template_name = "books/books_list.html"
@@ -24,3 +24,15 @@ class BookDetailsList(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
         context = super(BookDetailsList, self).get_context_data()
         context["reviews"] = self.object.book_reviews.all()
         return context
+
+
+class SearchResultsListView(ListView):
+    model = Book
+    template_name = "books/search_result.html"
+    context_object_name = "search_result"
+    def get_queryset(self):
+        searched_book = self.request.GET.get("q",None)
+        if searched_book:
+            return Book.objects.filter(
+              Q(title__icontains=searched_book)
+            )
