@@ -11,19 +11,26 @@ class BookListView(LoginRequiredMixin, ListView):
     model = Book
     context_object_name = "books"
     login_url = "account_login"
-
-
+    def get_queryset(self):
+        return Book.objects.all()
+        #.only() is used for optimization because instead of queryin all cols we just qury the cols that we needwhich's title here
 class BookDetailsList(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
     template_name = "books/book_details.html"
     model = Book
     context_object_name = "book"
     login_url = "account_login"
     permission_required = "books.special_status"
-
+    #queryset =  Book.objects.filter(.prefetch_related("book_reviews__user")
     def get_context_data(self, **kwargs):
         context = super(BookDetailsList, self).get_context_data()
         context["reviews"] = self.object.book_reviews.all()
         return context
+    def get_queryset(self):
+        #queryset = super().get_queryset()
+        book_id = self.kwargs['pk']
+        queryset = Book.objects.filter(id=book_id).prefetch_related("book_reviews__user")
+
+        return queryset
 
 
 class SearchResultsListView(ListView):

@@ -6,7 +6,7 @@
 
 {% block content %}
         <div class="book-detail">
-            <img class="bookcover" src="{{ book.book_cover }}" alt="{{ book.title }}">
+            <img class="bookcover" src="{{ book.cover.url }}" alt="{{ book.title }}">
             <h2><a href="">{{ book.title }}</a></h2>
             <p>Author: {{ book.author }}</p>
             <p>Price: {{ book.price }}</p>
@@ -16,7 +16,7 @@
         <h3>Reviews</h3>
         <ul>
         {% for review in reviews %}
-        <li>{{ review.review }} ({{ review.user }})</li>
+        <li>{{ review.review}} by {{review.user}}</li>
         {% endfor %}
         </ul>
         </div>
