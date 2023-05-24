@@ -23,7 +23,7 @@ class BookDetailsList(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
     #queryset =  Book.objects.filter(.prefetch_related("book_reviews__user")
     def get_context_data(self, **kwargs):
         context = super(BookDetailsList, self).get_context_data()
-        context["reviews"] = self.object.book_reviews.all()
+        context["reviews"] = self.object.book_reviews.all()[0].user.email
         return context
     def get_queryset(self):
         #queryset = super().get_queryset()
