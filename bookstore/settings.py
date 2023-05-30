@@ -27,7 +27,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False #env.bool("DJANGO_DEBUG",default=False)
 
-ALLOWED_HOSTS =  [".herokuapp.com", "localhost", "127.0.0.1"] #controls the specific hosts or domains that can access the website
+ALLOWED_HOSTS =  ["*"] #controls the specific hosts or domains that can access the website
 
 # Application definition
 
@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts.apps.AccountsConfig',
     'pages',
-    'TemplateLibrary.apps.TemplatelibraryConfig',
     "crispy_forms",
     "crispy_bootstrap5",
     "allauth",  # new
